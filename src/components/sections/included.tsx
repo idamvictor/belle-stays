@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { Accent } from "@/components/accent"
 import { Eyebrow } from "@/components/eyebrow"
 import { Reveal } from "@/components/reveal"
 import { IncludedCard } from "@/components/sections/included-card"
@@ -21,7 +22,7 @@ export function Included() {
       <div className="flex items-center px-[var(--gutter)] py-20 lg:px-[50px] lg:py-48">
         <Reveal className="flex max-w-[550px] flex-col gap-8">
           <Eyebrow>{included.eyebrow}</Eyebrow>
-          <h2 className="text-display">{included.title}</h2>
+          <h2 className="text-display"><Accent text={included.title} /></h2>
           <p className="text-lg leading-normal lg:text-[22px]">{included.body}</p>
           <a href="#features" className="group w-fit" aria-label="See what every stay includes">
             <Image

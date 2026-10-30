@@ -1,6 +1,7 @@
 import { UsersRoundIcon } from "lucide-react"
 import Image from "next/image"
 
+import { Accent } from "@/components/accent"
 import { LeadButton } from "@/components/leads/lead-button"
 import { Reveal } from "@/components/reveal"
 import {
@@ -16,7 +17,7 @@ export function FeaturedStays() {
   return (
     <section id="featured" className="bg-forest py-20 lg:py-32">
       <div className="container-site">
-        <h2 className="text-title mx-auto max-w-[650px] text-center text-white">{featuredTitle}</h2>
+        <h2 className="text-title mx-auto max-w-[650px] text-center text-white"><Accent text={featuredTitle} /></h2>
         <ul className="mt-12 grid gap-5 md:grid-cols-2 lg:mt-14 lg:grid-cols-3">
           {featuredStays.map((stay, i) => (
             <li key={stay.name}>

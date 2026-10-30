@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { Accent } from "@/components/accent"
 import { Eyebrow } from "@/components/eyebrow"
 import { Reveal } from "@/components/reveal"
 import { host, intro } from "@/content/home"
@@ -10,7 +11,7 @@ export function Intro() {
       <div className="flex justify-end px-[var(--gutter)] py-20 lg:py-48 lg:pr-28">
         <Reveal className="flex max-w-[520px] flex-col gap-8">
           <Eyebrow>{intro.eyebrow}</Eyebrow>
-          <h2 className="text-display">{intro.title}</h2>
+          <h2 className="text-display"><Accent text={intro.title} /></h2>
           <p className="text-lg leading-normal lg:text-[22px]">{intro.body}</p>
           <a
             href="#stays"

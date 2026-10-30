@@ -50,7 +50,7 @@ export function IncludedCard() {
                   />
                   <item.icon aria-hidden className="size-12 stroke-[1.25]" />
                 </div>
-                <p className="text-lg uppercase">{item.label}</p>
+                <p className="font-heading text-[28px] font-medium">{item.label}</p>
               </div>
             </CarouselItem>
           ))}

@@ -43,7 +43,7 @@ export function InteriorGallery() {
                 <Image src="/icons/plus.svg" alt="" width={27} height={28} className="relative" />
               </PopoverTrigger>
               <PopoverContent className="w-64 border-none bg-forest p-4 text-white">
-                <p className="font-heading text-xl tracking-[-0.5px]">{spot.title}</p>
+                <p className="font-heading text-2xl font-medium">{spot.title}</p>
                 <p className="mt-1 text-sm text-white/80">{spot.text}</p>
               </PopoverContent>
             </Popover>

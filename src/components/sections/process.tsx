@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useState } from "react"
 
+import { Accent } from "@/components/accent"
 import { Eyebrow } from "@/components/eyebrow"
 import { journey } from "@/content/home"
 import { cn } from "@/lib/utils"
@@ -15,7 +16,7 @@ export function Process() {
     <section aria-labelledby="process-title" className="bg-sand py-20 lg:py-32">
       <div className="container-site">
         <h2 id="process-title" className="text-title mx-auto max-w-[650px] text-center text-ink">
-          {journey.title}
+          <Accent text={journey.title} />
         </h2>
         <ol className="mt-12 flex flex-col gap-2.5 lg:mt-14 lg:h-[400px] lg:flex-row">
           {journey.steps.map((step, i) => {
@@ -34,7 +35,7 @@ export function Process() {
                 <Image src={step.icon} alt="" width={64} height={64} className="self-end" />
                 <div className="flex flex-col gap-[22px]">
                   <Eyebrow size="sm">{step.step}</Eyebrow>
-                  <h3 className="text-[32px] leading-[1.3] tracking-[-1px] text-forest">{step.title}</h3>
+                  <h3 className="font-heading text-[40px] leading-[1.1] font-medium text-forest">{step.title}</h3>
                   <p
                     className={cn(
                       "max-w-[450px] leading-[1.8] text-forest lg:transition-all lg:duration-500",

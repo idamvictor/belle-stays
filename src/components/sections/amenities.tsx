@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { Accent } from "@/components/accent"
 import { Eyebrow } from "@/components/eyebrow"
 import { amenities } from "@/content/home"
 
@@ -12,7 +13,7 @@ export function Amenities() {
       </h2>
       {amenities.map((amenity, i) => (
         <article
-          key={amenity.title}
+          key={amenity.image}
           className="sticky top-0 h-svh max-h-[900px] min-h-[560px] overflow-hidden"
           style={{ zIndex: i + 1 }}
         >
@@ -32,7 +33,7 @@ export function Amenities() {
               <Eyebrow tone="white" className="text-xs sm:text-base">
                 {amenity.eyebrow}
               </Eyebrow>
-              <h3 className="text-display">{amenity.title}</h3>
+              <h3 className="text-display"><Accent text={amenity.title} /></h3>
             </div>
           </div>
         </article>

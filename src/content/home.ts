@@ -38,7 +38,7 @@ export const socials = [
 ]
 
 export const hero = {
-  title: ["Stylish Stays,", "Made to Feel Like Home"],
+  title: ["Stylish Stays,", "Made to Feel *Like Home*"],
   location: "Downtown Portland, Oregon",
   pitch: "Comfortable, stylish stays for vacations, business trips, and weekend getaways.",
   // Set to a YouTube/Vimeo embed URL to turn the photo card into a video player.
@@ -69,7 +69,7 @@ export const host = {
 
 export const intro = {
   eyebrow: "About Belle Stays",
-  title: "Welcoming spaces, attentive service",
+  title: "Welcoming spaces, *attentive service*",
   body: "We look after every detail, from spotless spaces to quick, friendly help, so you can settle in and enjoy Portland like a local.",
 }
 
@@ -127,7 +127,7 @@ export const rooms: {
 
 export const included = {
   eyebrow: "The Belle Stays standard",
-  title: "Every stay, thoughtfully prepared",
+  title: "Every stay, *thoughtfully* prepared",
   body: "From the moment you book to the moment you check out, we take care of the details so you can relax and enjoy your time away.",
   items: [
     { icon: KeyRoundIcon, label: "Easy self check-in" },
@@ -165,7 +165,7 @@ export const stayTypes = [
   { name: "Family Homes", option: "Family home", sleeps: "Up to 6 guests", image: "/images/stays/family-home.jpg" },
 ]
 
-export const featuredTitle = "Find the stay that suits your trip"
+export const featuredTitle = "Find the stay that *suits your trip*"
 
 // TODO: confirm names, sizes and rates for your listings
 export const featuredStays = [
@@ -203,10 +203,10 @@ export const featuredStays = [
 
 // TODO: confirm which of these your properties offer
 export const amenities = [
-  { eyebrow: "Unwind", title: "Sunset Terraces", image: "/images/amenities/lounge.jpg", icon: "/icons/amenity-lounge.svg" },
-  { eyebrow: "Relax", title: "Pool Days", image: "/images/amenities/pool.jpg", icon: "/icons/amenity-pool.svg" },
-  { eyebrow: "Stay active", title: "Fitness on Your Schedule", image: "/images/amenities/fitness.jpg", icon: "/icons/amenity-fitness.svg" },
-  { eyebrow: "Step outside", title: "Green Spaces Nearby", image: "/images/amenities/gardens.jpg", icon: "/icons/amenity-gardens.svg" },
+  { eyebrow: "Unwind", title: "Sunset *Terraces*", image: "/images/amenities/lounge.jpg", icon: "/icons/amenity-lounge.svg" },
+  { eyebrow: "Relax", title: "Pool *Days*", image: "/images/amenities/pool.jpg", icon: "/icons/amenity-pool.svg" },
+  { eyebrow: "Stay active", title: "Fitness on *Your Schedule*", image: "/images/amenities/fitness.jpg", icon: "/icons/amenity-fitness.svg" },
+  { eyebrow: "Step outside", title: "Green Spaces *Nearby*", image: "/images/amenities/gardens.jpg", icon: "/icons/amenity-gardens.svg" },
 ]
 
 // Downtown Portland. TODO: confirm the exact Belle Stays address.
@@ -222,7 +222,7 @@ export const location = {
 }
 
 export const journey = {
-  title: "Easy from the first search to the moment you arrive",
+  title: "Easy from the first search to the *moment you arrive*",
   steps: [
     {
       step: "Step 01",
@@ -246,7 +246,7 @@ export const journey = {
 }
 
 export const cta = {
-  title: "Find the perfect stay for your next trip",
+  title: "Find the perfect stay for your *next trip*",
 }
 
 export const strip = [

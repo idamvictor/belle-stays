@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { Accent } from "@/components/accent"
 import { LeadButton } from "@/components/leads/lead-button"
 import { Reveal } from "@/components/reveal"
 import { cta } from "@/content/home"
@@ -18,7 +19,7 @@ export function Cta() {
       />
       <Reveal className="relative mx-auto flex max-w-[700px] flex-col items-center gap-16 px-5 pt-24 pb-20 text-center lg:pt-32 lg:pb-16">
         <h2 id="cta-title" className="text-display text-white">
-          {cta.title}
+          <Accent text={cta.title} />
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           <LeadButton kind="booking" variant="outline-light" size="cta-lg" className="backdrop-blur-sm">

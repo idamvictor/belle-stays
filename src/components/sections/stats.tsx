@@ -17,7 +17,7 @@ export function Stats() {
               </dt>
               <dd className="flex items-end gap-2 leading-none">
                 {item.prefix && <span className="mb-[0.4em] text-sm lg:text-base">{item.prefix}</span>}
-                <Odometer value={item.value} className="text-[clamp(2.75rem,1.5rem+4vw,4.5rem)] leading-[1.2]" />
+                <Odometer value={item.value} className="text-numeral text-[clamp(3.5rem,2rem+5vw,6rem)] leading-[1.2]" />
                 <span className="mb-[0.4em] text-sm lg:text-base">{item.unit}</span>
               </dd>
             </div>

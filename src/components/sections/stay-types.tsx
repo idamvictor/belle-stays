@@ -27,11 +27,11 @@ function InfoBar({ stay, className }: { stay: StayType; className?: string }) {
       <dl className="flex flex-wrap gap-x-12 gap-y-4">
         <div>
           <dt className="text-xs uppercase">Sleeps</dt>
-          <dd className="text-[32px] leading-[1.3] font-medium tracking-[-1px]">{stay.sleeps}</dd>
+          <dd className="font-heading text-4xl leading-[1.1] font-medium">{stay.sleeps}</dd>
         </div>
         <div className="border-l border-white/10 pl-6">
           <dt className="text-xs uppercase">Nightly rates</dt>
-          <dd className="text-[32px] leading-[1.3] font-medium tracking-[-1px]">On request</dd>
+          <dd className="font-heading text-4xl leading-[1.1] font-medium">On request</dd>
         </div>
       </dl>
       <LeadButton kind="booking" stay={stay.option} variant="brand" size="cta">
@@ -72,7 +72,7 @@ export function StayTypes() {
                 aria-hidden
                 className={cn("absolute inset-0 bg-black/60 transition-opacity duration-700", isActive && "opacity-0")}
               />
-              <h3 className="absolute inset-0 text-2xl font-bold text-white uppercase">
+              <h3 className="absolute inset-0 font-heading text-[clamp(1.75rem,2.4vw,2.75rem)] font-medium tracking-[0.12em] text-white uppercase">
                 <button
                   type="button"
                   onClick={() => setActive(i)}
@@ -104,8 +104,8 @@ export function StayTypes() {
             <CarouselItem key={stay.name} className="pl-0">
               <div className="relative flex aspect-[3/4] flex-col justify-between p-4 sm:aspect-[4/3]">
                 <Image src={stay.image} alt="" fill sizes="100vw" className="object-cover" />
-                <h3 className="relative pt-20 text-center text-2xl font-bold text-white uppercase">{stay.name}</h3>
-                <InfoBar stay={stay} className="relative p-4 [&_dd]:text-2xl" />
+                <h3 className="relative pt-20 text-center font-heading text-4xl font-medium tracking-[0.12em] text-white uppercase">{stay.name}</h3>
+                <InfoBar stay={stay} className="relative p-4 [&_dd]:text-[28px]" />
               </div>
             </CarouselItem>
           ))}

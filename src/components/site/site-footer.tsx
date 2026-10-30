@@ -49,7 +49,7 @@ export function SiteFooter() {
               </div>
               <nav aria-labelledby="footer-menu">
                 <h2 id="footer-menu">Menu</h2>
-                <ul className="mt-4 grid gap-3 text-[32px] leading-none font-bold">
+                <ul className="mt-4 grid gap-3 font-heading text-[40px] leading-none font-medium">
                   {footer.menu.map((item) => (
                     <li key={item.href}>
                       <a href={item.href} className="transition-colors hover:text-copper">
@@ -66,7 +66,7 @@ export function SiteFooter() {
             <Eyebrow tone="white" size="sm">
               {footer.enquiryEyebrow}
             </Eyebrow>
-            <p className="mt-[18px] font-heading text-2xl leading-[1.3] tracking-[-1px]">{footer.enquiryTitle}</p>
+            <p className="mt-[18px] font-heading text-[30px] leading-[1.2] font-medium">{footer.enquiryTitle}</p>
             <div className="mt-8">
               <EnquiryForm />
             </div>
