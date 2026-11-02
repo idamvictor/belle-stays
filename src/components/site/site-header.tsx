@@ -1,6 +1,6 @@
 "use client"
 
-import { MenuIcon } from "lucide-react"
+import { MapPinIcon, MenuIcon } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
@@ -47,6 +47,20 @@ export function SiteHeader() {
         hidden && "-translate-y-[calc(100%+1.5rem)] focus-within:translate-y-0"
       )}
     >
+      <a
+        href={site.mapsUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Open ${site.address.join(", ")} in Google Maps`}
+        className={cn(
+          "mb-1.5 flex items-center justify-center gap-2 px-4 py-2 text-xs text-white/90 backdrop-blur-[20px] transition-colors duration-500 outline-none hover:text-copper focus-visible:ring-2 focus-visible:ring-copper sm:text-sm",
+          scrolled ? "bg-forest/85" : "bg-black/15"
+        )}
+      >
+        <MapPinIcon aria-hidden className="size-4 shrink-0" />
+        <span className="truncate">{site.address.join(", ")}</span>
+      </a>
+
       <div
         className={cn(
           "flex min-h-16 items-center gap-6 px-5 py-2 backdrop-blur-[20px] transition-colors duration-500 lg:min-h-24",

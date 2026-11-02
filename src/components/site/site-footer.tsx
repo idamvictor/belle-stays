@@ -17,18 +17,14 @@ export function SiteFooter() {
               <div>
                 <h2>Contact</h2>
                 <address className="mt-4 text-lg not-italic leading-normal">
-                  <a href={`tel:${site.phone.replace(/[^\d+]/g, "")}`} className="hover:text-copper">
-                    {site.phone}
-                  </a>
-                  <br />
                   <a href={`mailto:${site.email}`} className="hover:text-copper">
                     {site.email}
                   </a>
-                  <span className="mt-4 block">
+                  <a href={site.mapsUrl} target="_blank" rel="noreferrer" className="mt-4 block w-fit hover:text-copper">
                     {site.address[0]}
                     <br />
                     {site.address[1]}
-                  </span>
+                  </a>
                 </address>
                 <h2 className="mt-10">Social</h2>
                 <ul className="mt-4 flex gap-2">

@@ -33,6 +33,7 @@ function markerIcon(icon: string, tone: "forest" | "copper") {
 
 const buildingIcon = markerIcon("/icons/map-building.svg", "copper")
 const placeIcons = location.places.map((place) => markerIcon(place.icon, "forest"))
+const bounds = L.latLngBounds([location.building.position, ...location.places.map((place) => place.position)])
 
 function FlyTo({ target }: { target: [number, number] | null }) {
   const map = useMap()
@@ -48,8 +49,8 @@ export default function LocationMap() {
   return (
     <div className="relative size-full">
       <MapContainer
-        center={location.center}
-        zoom={15.5}
+        bounds={bounds}
+        boundsOptions={{ paddingTopLeft: [80, 110], paddingBottomRight: [80, 50] }}
         zoomSnap={0.5}
         scrollWheelZoom={false}
         dragging={!L.Browser.mobile}

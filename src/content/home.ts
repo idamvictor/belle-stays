@@ -10,14 +10,15 @@ import {
   WifiIcon,
 } from "lucide-react"
 
+const address = ["2667 NE 205th Avenue", "Fairview, OR 97024"] as const
+
 export const site = {
   name: "Belle Stays",
   description:
-    "Belle Stays offers comfortable, stylish short-term accommodations in Portland, Oregon for vacations, business trips, and weekend getaways.",
-  // TODO: confirm contact details
-  phone: "+1 (503) 000-0000",
-  email: "hello@bellestays.com",
-  address: ["Downtown Portland", "Portland, Oregon"],
+    "Belle Stays offers comfortable, stylish short-term accommodations in the Portland, Oregon area for vacations, business trips, and weekend getaways.",
+  email: "info@bellestays.net",
+  address,
+  mapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address.join(", "))}`,
 }
 
 export const nav = [
@@ -39,7 +40,7 @@ export const socials = [
 
 export const hero = {
   title: ["Stylish Stays,", "Made to Feel *Like Home*"],
-  location: "Downtown Portland, Oregon",
+  location: "Fairview, Oregon",
   pitch: "Comfortable, stylish stays for vacations, business trips, and weekend getaways.",
   // Set to a YouTube/Vimeo embed URL to turn the photo card into a video player.
   videoUrl: "",
@@ -60,9 +61,7 @@ export const stats = {
 export const host = {
   name: "Belle Stays Guest Team",
   role: "Your hosts",
-  // TODO: confirm contact details and photo
-  phone: "+1 (503) 000-0000",
-  email: "stay@bellestays.com",
+  // TODO: confirm Instagram link and photo
   instagram: "https://www.instagram.com",
   photo: "/images/intro/agent.jpg",
 }
@@ -70,7 +69,7 @@ export const host = {
 export const intro = {
   eyebrow: "About Belle Stays",
   title: "Welcoming spaces, *attentive service*",
-  body: "We look after every detail, from spotless spaces to quick, friendly help, so you can settle in and enjoy Portland like a local.",
+  body: "We look after every detail, from spotless spaces to quick, friendly help, so you can settle in and enjoy the Portland area like a local.",
 }
 
 export type Hotspot = { x: number; y: number; title: string; text: string }
@@ -209,15 +208,14 @@ export const amenities = [
   { eyebrow: "Step outside", title: "Green Spaces *Nearby*", image: "/images/amenities/gardens.jpg", icon: "/icons/amenity-gardens.svg" },
 ]
 
-// Downtown Portland. TODO: confirm the exact Belle Stays address.
+// Positions from OpenStreetMap. The map frames all of these markers.
 export const location = {
-  center: [45.5196, -122.6762] as [number, number],
-  building: { name: "Belle Stays", note: "Downtown Portland", position: [45.5205, -122.677] as [number, number] },
+  building: { name: "Belle Stays", note: address[0], position: [45.5423, -122.4516] as [number, number] },
   places: [
-    { name: "Pioneer Courthouse Square", kind: "Transit & events", icon: "/icons/map-transit.svg", position: [45.5189, -122.6793] as [number, number] },
-    { name: "Powell's City of Books", kind: "Shopping", icon: "/icons/map-shopping.svg", position: [45.5231, -122.6814] as [number, number] },
-    { name: "Voodoo Doughnut", kind: "Food & drink", icon: "/icons/map-dining.svg", position: [45.5226, -122.6731] as [number, number] },
-    { name: "Tom McCall Waterfront Park", kind: "Park", icon: "/icons/map-park.svg", position: [45.5163, -122.6731] as [number, number] },
+    { name: "Gresham Central Transit Center", kind: "MAX & buses", icon: "/icons/map-transit.svg", position: [45.5028, -122.4269] as [number, number] },
+    { name: "Gresham Station", kind: "Shopping", icon: "/icons/map-shopping.svg", position: [45.5111, -122.4425] as [number, number] },
+    { name: "McMenamins Edgefield", kind: "Food & drink", icon: "/icons/map-dining.svg", position: [45.5371, -122.4069] as [number, number] },
+    { name: "Salish Ponds Park", kind: "Park", icon: "/icons/map-park.svg", position: [45.5307, -122.4448] as [number, number] },
   ],
 }
 

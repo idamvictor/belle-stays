@@ -8,7 +8,7 @@ import { hero, site } from "@/content/home"
 
 export function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-forest pt-24 lg:pt-32">
+    <section id="home" className="relative overflow-hidden bg-forest pt-32 lg:pt-40">
       {/* Sky */}
       <Image
         src="/images/hero/sky.jpg"
@@ -47,10 +47,10 @@ export function Hero() {
               <br />
               <Accent text={hero.title[1]} />
             </p>
-            <p className="flex items-center gap-2">
+            <a href={site.mapsUrl} target="_blank" rel="noreferrer" className="flex items-center gap-2 transition-colors hover:text-copper">
               <Image src="/icons/location.svg" alt="" width={27} height={28} />
               {hero.location}
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -62,10 +62,10 @@ export function Hero() {
           <br />
           <Accent text={hero.title[1]} />
         </p>
-        <p className="mt-4 flex items-center gap-2 text-sm">
+        <a href={site.mapsUrl} target="_blank" rel="noreferrer" className="mt-4 flex w-fit items-center gap-2 text-sm transition-colors hover:text-copper">
           <Image src="/icons/location.svg" alt="" width={20} height={21} />
           {hero.location}
-        </p>
+        </a>
       </div>
 
       {/* Host card + photo card */}

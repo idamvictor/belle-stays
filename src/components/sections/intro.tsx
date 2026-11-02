@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Accent } from "@/components/accent"
 import { Eyebrow } from "@/components/eyebrow"
 import { Reveal } from "@/components/reveal"
-import { host, intro } from "@/content/home"
+import { host, intro, site } from "@/content/home"
 
 export function Intro() {
   return (
@@ -48,15 +48,9 @@ export function Intro() {
               <a href={host.instagram} target="_blank" rel="noreferrer" aria-label={`${host.name} on Instagram`}>
                 <Image src="/icons/social-instagram.svg" alt="" width={35} height={35} />
               </a>
-              <p>
-                <a href={`tel:${host.phone.replace(/[^\d+]/g, "")}`} className="hover:underline">
-                  {host.phone}
-                </a>
-                <br />
-                <a href={`mailto:${host.email}`} className="hover:underline">
-                  {host.email}
-                </a>
-              </p>
+              <a href={`mailto:${site.email}`} className="self-center hover:underline">
+                {site.email}
+              </a>
             </div>
           </div>
           <Image
