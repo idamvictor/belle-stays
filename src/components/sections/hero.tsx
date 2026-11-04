@@ -8,7 +8,7 @@ import { hero, site } from "@/content/home"
 
 export function Hero() {
   return (
-    <section id="home" className="relative bg-forest">
+    <section id="home" className="relative bg-black">
       <h1 className="sr-only">
         {site.name}: {plain(hero.title.join(" "))}
       </h1>
@@ -23,7 +23,8 @@ export function Hero() {
           sizes="100vw"
           className="-z-10 object-cover"
         />
-        <div aria-hidden className="absolute inset-0 -z-10 bg-linear-to-b from-black/40 via-black/20 via-60% to-forest" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-black/60" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-linear-to-b from-black/50 via-transparent via-50% to-black" />
 
         <Wordmark className="text-[clamp(44px,10.4vw,152px)] [text-shadow:0_2px_30px_rgb(0_0_0/0.35)]" />
         <p className="text-display mt-6 [text-shadow:0_2px_24px_rgb(0_0_0/0.4)] lg:mt-8">
