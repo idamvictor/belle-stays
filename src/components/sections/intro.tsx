@@ -7,7 +7,7 @@ import { host, intro, site } from "@/content/home"
 
 export function Intro() {
   return (
-    <section id="about" className="grid grid-cols-[minmax(0,1fr)] bg-forest text-white lg:grid-cols-[minmax(0,1fr)_minmax(0,740px)]">
+    <section id="about" className="grid grid-cols-[minmax(0,1fr)] bg-forest text-white lg:grid-cols-2 xl:grid-cols-[minmax(0,1fr)_minmax(0,740px)]">
       <div className="flex justify-end px-[var(--gutter)] py-20 lg:py-48 lg:pr-28">
         <Reveal className="flex max-w-[520px] flex-col gap-8">
           <Eyebrow>{intro.eyebrow}</Eyebrow>

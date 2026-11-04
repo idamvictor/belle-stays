@@ -8,7 +8,7 @@ import { included } from "@/content/home"
 
 export function Included() {
   return (
-    <section className="grid grid-cols-[minmax(0,1fr)] bg-sand text-forest lg:grid-cols-[minmax(0,720px)_minmax(0,1fr)]">
+    <section className="grid grid-cols-[minmax(0,1fr)] bg-sand text-forest lg:grid-cols-2 xl:grid-cols-[minmax(0,720px)_minmax(0,1fr)]">
       <div className="relative grid min-h-[560px] grid-cols-[minmax(0,1fr)] place-items-center px-5 pt-16 pb-20 lg:min-h-[760px]">
         <Image
           src="/images/material/living.jpg"

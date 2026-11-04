@@ -17,7 +17,7 @@ export function HeroVideo() {
   const cover = (
     <>
       <Image
-        src="/images/hero/video-cover.jpg"
+        src="/images/hero/building-exterior.jpg"
         alt=""
         fill
         sizes="(min-width: 768px) 50vw, 100vw"

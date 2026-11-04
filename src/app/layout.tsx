@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: site.name,
     description: site.description,
-    images: ["/images/hero/video-cover.jpg", "/brand/logo.png"],
+    images: ["/images/hero/building-exterior.jpg", "/brand/logo.png"],
   },
 };
 
